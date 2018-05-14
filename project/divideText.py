@@ -2,6 +2,7 @@ import jieba
 from collections import Counter
 f=open("../text/投诉文本.txt",'r', encoding='UTF-8')#只读，注意编码方式
 of=open("../text/高频词.txt",'w', encoding='UTF-8')
+jieba.load_userdict('../text/自定义词.txt')#导入自定义词
 #加载停用词表
 stopWord = [line.strip()for line in open('../text/停用词.txt').readlines() ]
 line=f.read() #读取文件一行代码，有可能读的是空行
