@@ -7,7 +7,7 @@ ef=open("../text/实体.txt",'w',encoding='UTF-8')
 jieba.load_userdict('../text/自定义词.txt')#导入自定义词
 #加载停用词表
 stopWord = [line.strip()for line in open('../text/停用词.txt').readlines() ]
-line=f.read() #读取文件一行代码，有可能读的是空行
+line=f.read()
 if line:
     seg_list = jieba.cut(line, cut_all=False)
     c = Counter()
