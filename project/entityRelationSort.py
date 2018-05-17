@@ -17,7 +17,7 @@ while line:
     edic[text.split()[0]] = text.split()[1]
     line=ef.readline()
 for i in eedic:
-    eesdic[(i[0],i[1])]=int(eedic[i])/int(edic[i[0]])/int(edic[i[1]])
+    eesdic[(i[0],i[1])]=int(eedic[i])*33526/int(edic[i[0]])/int(edic[i[1]])
 
 sort=sorted(eesdic.items(),key = lambda x:x[1],reverse = True)
 for i in sort:
