@@ -13,7 +13,7 @@ while(line):
 html = ""
 for w, c in dic.items():
     color = 'rgb(%s, %s, %s)' % (str(random.randint(0, 255)), str(random.randint(0, 255)), str(random.randint(0, 255)))
-    fontsize = int(float(c) * 1 + 10)
+    fontsize = int(float(c) * 10 + 10)
     html += '<span style=\"font-size:' + str(fontsize) + 'px;color:' + color + ';float:left;\">' +'&#160'+ w[0]+'-'+w[1]+'&#160' + '</span>'
 
 # dump it to a file
